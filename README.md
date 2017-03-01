@@ -3,16 +3,18 @@
 Shiny template that lets you develop your shiny app as an R package. This app also tries to demonstrates some other good practices such as
 
 
-## Goals for template
+## Goals for functionality
 
-- Use code modularization via modules
-- Allow users to download and run your app with `devtools::install_github` and then run with `shinytemplate::shinytemplate()`
-- Get changes to code changes when you refresh page if running in "dev mode"
 - Allow parsing URL params to switch to different tabs or app states
-
-
+- Allow seeing changes to code simply with page refreshes if running in "dev mode". Normal `shiny` has this but running as a package needed a slightly modified setup
 
 For time being, this is a template for complete Shiny apps, not widgets that can be included in other Shiny apps
+
+## Goals for code style
+
+- Use code modularization via modules
+- Allow users to download and run your app with `devtools::install_github` and then run with `shinytemplate()`
+- Consistent code style checks with lint
 
 
 ## Install

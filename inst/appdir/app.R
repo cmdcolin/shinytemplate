@@ -1,9 +1,10 @@
-source('view/plot.R')
-source('view/table.R')
-
 ui <- function(request) {
+
+    source('ui/plot.R', local=T)
+    source('ui/table.R', local=T)
+
     shiny::fluidPage(
-        shiny::titlePanel('shinytemplate2'),
+        shiny::titlePanel('shinytemplate3'),
 
         shiny::tabsetPanel(id = 'inTabset',
             shiny::tabPanel('Plot', plotUI('plot_tab'), style = 'width:1000px;'),
@@ -13,6 +14,10 @@ ui <- function(request) {
 }
 
 server <- function(input, output, session) {
+
+    source('server/plot.R', local=T)
+    source('server/table.R', local=T)
+
     shiny::callModule(plotServer, 'plot_tab')
     shiny::callModule(tableServer, 'table_tab')
 
