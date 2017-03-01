@@ -8,7 +8,7 @@
 #' shinytemplate()
 #' }
 
-#' shinytemplate runs the app in production mode
+#' Run the app in production mode
 #' @export
 shinytemplate <- function() {
     filename <-  base::system.file('appdir', package = 'shinytemplate')
@@ -17,7 +17,7 @@ shinytemplate <- function() {
 }
 
 
-#' shinytemplate runs the app in development mode
+#' Run the app in development mode
 #' @export
 shinytemplateDev <- function() {
     shiny::runApp('inst/appdir', launch.browser = TRUE)

@@ -14,7 +14,7 @@ the user's default web browser.
 \dontrun{
 shinytemplate()
 }
-shinytemplate runs the app in production mode
+Run the app in production mode
 }
 \author{
 Colin Diesh \email{colin.diesh@gmail.com}

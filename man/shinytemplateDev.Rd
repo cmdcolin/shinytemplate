@@ -2,10 +2,10 @@
 % Please edit documentation in R/shinytemplate.R
 \name{shinytemplateDev}
 \alias{shinytemplateDev}
-\title{shinytemplate runs the app in development mode}
+\title{Run the app in development mode}
 \usage{
 shinytemplateDev()
 }
 \description{
-shinytemplate runs the app in development mode
+Run the app in development mode
 }
