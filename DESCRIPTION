@@ -6,7 +6,7 @@ Authors@R: c(
     person("Colin", "Diesh", email = "dieshcol@msu.edu", role = c("cre", "aut")))
 Maintainer: Colin Diesh <dieshcol@msu.edu>
 Description: shinytemplate allows you to develop a shiny app as a package that can be \
-    live reloaded
+    live reloaded. This can be extended to create your own shiny apps as packages.
 Depends:
     R (>= 3.2.3)
 Imports:
@@ -14,6 +14,6 @@ Imports:
     shiny (>= 0.14.2),
 Suggests:
     testthat
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 RoxygenNote: 6.0.1.9000

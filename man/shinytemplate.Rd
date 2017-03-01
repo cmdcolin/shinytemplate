@@ -4,7 +4,7 @@
 \alias{shinytemplate}
 \title{Launch the shinytemplate app}
 \usage{
-shinytemplate(option1 = NULL, option2 = NULL, option3 = NULL)
+shinytemplate(option1 = NULL, option2 = NULL)
 }
 \arguments{
 \item{option1}{Option 1}
@@ -19,6 +19,7 @@ the user's default web browser.
 \dontrun{
 shinytemplate()
 }
+shinytemplate runs the app in production mode
 }
 \author{
 Colin Diesh \email{colin.diesh@gmail.com}
