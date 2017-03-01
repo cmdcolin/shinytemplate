@@ -4,12 +4,7 @@
 \alias{shinytemplate}
 \title{Launch the shinytemplate app}
 \usage{
-shinytemplate(option1 = NULL, option2 = NULL)
-}
-\arguments{
-\item{option1}{Option 1}
-
-\item{option2}{Option 2}
+shinytemplate()
 }
 \description{
 Executing this function will launch the shinytemplate application in

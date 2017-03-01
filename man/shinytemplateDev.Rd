@@ -4,12 +4,7 @@
 \alias{shinytemplateDev}
 \title{shinytemplate runs the app in development mode}
 \usage{
-shinytemplateDev(option1 = NULL, option2 = NULL)
-}
-\arguments{
-\item{option1}{Option 1}
-
-\item{option2}{Option 2}
+shinytemplateDev()
 }
 \description{
 shinytemplate runs the app in development mode

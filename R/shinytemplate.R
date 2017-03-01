@@ -10,11 +10,7 @@
 
 #' shinytemplate runs the app in production mode
 #' @export
-#' @param option1 Option 1
-#' @param option2 Option 2
-shinytemplate <- function(option1 = NULL, option2 = NULL) {
-    .GlobalEnv$.args <- list(option1 = option1, option2 = option2)
-    on.exit(rm(.args, envir = .GlobalEnv))
+shinytemplate <- function() {
     filename <-  base::system.file('appdir', package = 'shinytemplate')
     shiny::runApp(filename, launch.browser = TRUE)
     return(invisible())
@@ -23,11 +19,7 @@ shinytemplate <- function(option1 = NULL, option2 = NULL) {
 
 #' shinytemplate runs the app in development mode
 #' @export
-#' @param option1 Option 1
-#' @param option2 Option 2
-shinytemplateDev <- function(option1 = NULL, option2 = NULL) {
-    .GlobalEnv$.args <- list(option1 = option1, option2 = option2)
-    on.exit(rm(.args, envir = .GlobalEnv))
+shinytemplateDev <- function() {
     shiny::runApp('inst/appdir', launch.browser = TRUE)
     return(invisible())
 }
