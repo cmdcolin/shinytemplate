@@ -1,0 +1,19 @@
+Package: shinytemplate
+Type: Package
+Title: Template for developing shiny app as a package with live reloading
+Version: 0.1.0
+Authors@R: c(
+    person("Colin", "Diesh", email = "dieshcol@msu.edu", role = c("cre", "aut")))
+Maintainer: Colin Diesh <dieshcol@msu.edu>
+Description: shinytemplate allows you to develop a shiny app as a package that can be \
+    live reloaded
+Depends:
+    R (>= 3.2.3)
+Imports:
+    tools (>= 3.2.3),
+    shiny (>= 0.14.2),
+Suggests:
+    testthat
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 6.0.1.9000
