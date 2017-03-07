@@ -4,7 +4,14 @@
 \alias{shinytemplate}
 \title{Launch the shinytemplate app}
 \usage{
-shinytemplate()
+shinytemplate(option1 = NULL, option2, dev = F)
+}
+\arguments{
+\item{option1}{An option for your app}
+
+\item{option2}{Another option for your app}
+
+\item{dev}{Loads from local directories if selected}
 }
 \description{
 Executing this function will launch the shinytemplate application in
@@ -12,10 +19,6 @@ the user's default web browser.
 }
 \examples{
 \dontrun{
-shinytemplate()
+shinytemplate(option1 = 'hello', option2 = 'world')
 }
-Run the app in production mode
-}
-\author{
-Colin Diesh \email{colin.diesh@gmail.com}
 }

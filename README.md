@@ -1,5 +1,7 @@
 # shinytemplate
 
+[![Build Status](https://travis-ci.org/cmdcolin/shinytemplate.svg?branch=master)](https://travis-ci.org/cmdcolin/shinytemplate)
+
 Shiny template that lets you develop your shiny app as an R package. This app also tries to demonstrates some other good practices such as
 
 
@@ -37,6 +39,6 @@ The function also accepts some arguments, so if your app benefits from the user 
 An important goal for this template was to allow for code changes to get reloaded by just refreshing the browser which speeds up development
 
     devtools::load_all()
-    shinytemplateDev()
+    shinytemplate(dev = T)
 
 The `devtools::load_all` function loads the library in the current directory, and then `shinytemplateDev` uses runApp pointing to the `inst/appdir` directory

@@ -2,24 +2,22 @@
 #'
 #' Executing this function will launch the shinytemplate application in
 #' the user's default web browser.
-#' @author Colin Diesh \email{colin.diesh@gmail.com}
 #' @examples
 #' \dontrun{
-#' shinytemplate()
+#' shinytemplate(option1 = 'hello', option2 = 'world')
 #' }
-
-#' Run the app in production mode
 #' @export
-shinytemplate <- function() {
-    filename <-  base::system.file('appdir', package = 'shinytemplate')
-    shiny::runApp(filename, launch.browser = TRUE)
-    return(invisible())
-}
-
-
-#' Run the app in development mode
-#' @export
-shinytemplateDev <- function() {
-    shiny::runApp('inst/appdir', launch.browser = TRUE)
-    return(invisible())
+#' @param option1 An option for your app
+#' @param option2 Another option for your app
+#' @param dev Loads from local directories if selected
+shinytemplate = function(option1 = NULL, option2, dev = F) {
+    assign("option1", option1, envir = .GlobalEnv)
+    assign("option2", option2, envir = .GlobalEnv)
+    on.exit(rm(option1, envir = .GlobalEnv))
+    on.exit(rm(option2, envir = .GlobalEnv))
+    if (!dev) {
+        shiny::runApp(base::system.file("appdir", package = "shinytemplate"))
+    } else {
+        shiny::runApp('inst/appdir')
+    }
 }
