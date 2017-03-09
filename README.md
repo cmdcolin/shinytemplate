@@ -9,6 +9,7 @@ Shiny template that lets you develop your shiny app as an R package. This app al
 
 - Allow parsing URL params to switch to different tabs or app states
 - Allow seeing changes to code simply with page refreshes if running in "dev mode". Normal `shiny` has this but running as a package needed a slightly modified setup
+- Ability to list dependencies in DESCRIPTION file to make installation streamlined
 
 For time being, this is a template for complete Shiny apps, not widgets that can be included in other Shiny apps
 
